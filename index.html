@@ -11,6 +11,11 @@
   frameborder="0"
 ></iframe>
 <script>
-  const list = document.querySelectorAll('a')
-  list.forEach(e => e.remove())
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      const list = document.querySelectorAll('[class*="embed"]')
+      console.log('ELEMENTS LIST', list)
+      list.forEach(e => e.remove())
+    }, 5000)
+  })
 </script>

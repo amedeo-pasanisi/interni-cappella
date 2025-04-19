@@ -12,10 +12,11 @@
 ></iframe>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM CONTENT LOADED')
     setTimeout(() => {
       const list = document.querySelectorAll('[class*="embed"]')
       console.log('ELEMENTS LIST', list)
       list.forEach(e => e.remove())
-    }, 5000)
+    }, 60000)
   })
 </script>
